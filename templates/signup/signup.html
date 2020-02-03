@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+ <h2 >Modal Signup Form</h2>
+
+  <form method="POST" action="signup">
+      {% csrf_token %}
+    <div class="container">
+      <p>Please fill in this form to create an account.</p>
+
+        <label ><b>User Name </b></label>
+      <input type="text" placeholder="Enter User Name" name="username" required><br>
+
+      <label ><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <label ><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required><br>
+
+        <input type="submit">
+
+    </div>
+  </form>
+</body>
+</html>
